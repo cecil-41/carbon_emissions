@@ -27,7 +27,7 @@ class EmissionForm(forms.Form):
         choices=[(year, year) for year in range(1950, 2025)],
         widget=forms.Select(attrs={'class': 'form-select form-select-sm'})
     )
-    units = forms.ChoiceField(
+    measure_units = forms.ChoiceField(
         choices=[('G', 'Grams'), ('LB', 'Pounds'), ('KG', 'Kilograms'), ('MT', 'Megatons')],
         widget=forms.Select(attrs={'class': 'form-select form-select-sm'})
     )
